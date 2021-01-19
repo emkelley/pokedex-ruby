@@ -14,12 +14,18 @@
           preload
           loop
           id="audio"
-          muted
         ></audio>
         <div @click="toggleSound()" class="toggle-sound button is-dark">
           Toggle Main Menu Music
         </div>
       </div>
+      <br /><br />
+      <center>
+        <small style="color: white"
+          >Made with 💜 and ☕ by
+          <a style="color: white" href="https://emk.dev">Eric Kelley</a></small
+        >
+      </center>
     </main>
   </div>
 </template>
