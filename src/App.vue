@@ -6,7 +6,20 @@
         <h1 class="title" style="color:white">Pokedex</h1>
         <hr />
       </center>
-      <Screen msg="Welcome to Your Vue.js App" />
+      <Screen msg="Welcome to Your Vue.js App" /> <br /><br />
+      <div class="music-player has-text-centered">
+        <audio
+          ref="audio"
+          src="@/assets/ruby_opening.ogg"
+          preload
+          loop
+          id="audio"
+          muted
+        ></audio>
+        <div @click="toggleSound()" class="toggle-sound button is-dark">
+          Toggle Main Menu Music
+        </div>
+      </div>
     </main>
   </div>
 </template>
@@ -18,6 +31,19 @@ export default {
   name: "App",
   components: {
     Screen,
+  },
+  methods: {
+    toggleSound() {
+      let audio = this.$refs.audio;
+      audio.volume = 0.15;
+      if (audio.paused || !audio.currentTime) {
+        console.log("play");
+        audio.play();
+      } else {
+        console.log("pause");
+        audio.pause();
+      }
+    },
   },
 };
 </script>
@@ -33,6 +59,7 @@ body {
   align-items: center;
   justify-content: center;
   height: 100vh;
+  font-smooth: never;
 }
 @font-face {
   font-family: "Pokemon Pixel";

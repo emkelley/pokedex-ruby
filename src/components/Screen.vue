@@ -131,7 +131,7 @@ export default {
   display: flex;
   align-items: center;
   justify-content: center;
-  text-shadow: 2px 2px #000000;
+  text-shadow: 3px 2px #000000;
   .stats--container {
     width: 100%;
   }
@@ -145,10 +145,14 @@ export default {
   hr {
     height: 5px;
     margin: 0;
-    box-shadow: 2px 2px #000000;
+    box-shadow: 3px 2px #000000;
   }
   p {
     font-size: 5rem;
+    font-weight: bold;
+    letter-spacing: 0.3rem;
+    text-shadow: 4px 3px #000000;
+    font-smooth: never;
   }
 }
 .pokemon-wheel {
