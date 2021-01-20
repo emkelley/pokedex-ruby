@@ -1,9 +1,31 @@
 <template>
   <div id="app">
     <main>
+      <div class="level">
+        <div class="level-left">
+          <div class="level-item">
+            <div>
+              <img src="@/assets/Pokemon_Ruby.webp" width="200" alt="" />
+              <br /><br />
+            </div>
+          </div>
+        </div>
+        <div class="level-right">
+          <div class="level-item">
+            <div>
+              <h1 class="title" style="color:white">Project Pokedex - Ruby</h1>
+              <br />
+              <small style="color: white"
+                >Made with 💜 and ☕ by
+                <a style="color: white" href="https://emk.dev"
+                  >Eric Kelley</a
+                ></small
+              >
+            </div>
+          </div>
+        </div>
+      </div>
       <center>
-        <img src="@/assets/Pokemon_Ruby.webp" width="200" alt="" />
-        <h1 class="title" style="color:white">Pokedex</h1>
         <hr />
       </center>
       <Screen msg="Welcome to Your Vue.js App" /> <br /><br />
