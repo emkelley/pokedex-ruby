@@ -1,24 +1,10 @@
-# pokedex-ruby
+# Project Pokedex - Pokemon Ruby
+
+Just a simple Vue 2 app to mimic the look of the Pokedex in Pokemon Ruby. Pulls data from the [PokeApi](https://pokeapi.co/) and the [pokemon](https://www.npmjs.com/package/pokemon) NPM package
 
 ## Project setup
 ```
 npm install
+npm run dev
 ```
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
-
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
