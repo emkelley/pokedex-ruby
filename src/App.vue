@@ -15,7 +15,10 @@
           loop
           id="audio"
         ></audio>
-        <div @click="toggleSound()" class="toggle-sound button is-dark">
+        <div
+          @click="toggleSound()"
+          class="toggle-sound button is-light is-outlined"
+        >
           Toggle Main Menu Music
         </div>
       </div>
@@ -60,7 +63,7 @@ body {
 }
 #app {
   color: #2c3e50;
-  background-color: #675e9d;
+  background: radial-gradient(#a51818, #620e0e);
   display: flex;
   align-items: center;
   justify-content: center;
