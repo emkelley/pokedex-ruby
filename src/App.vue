@@ -15,7 +15,7 @@
             <div>
               <h1 class="title" style="color:white">Project Pokedex - Ruby</h1>
               <br />
-              <small style="color: white"
+              <small style="color: white; float: right"
                 >Made with 💜 and ☕ by
                 <a style="color: white" href="https://emk.dev"
                   >Eric Kelley</a
@@ -44,13 +44,6 @@
           Toggle Main Menu Music
         </div>
       </div>
-      <br /><br />
-      <center>
-        <small style="color: white"
-          >Made with 💜 and ☕ by
-          <a style="color: white" href="https://emk.dev">Eric Kelley</a></small
-        >
-      </center>
     </main>
   </div>
 </template>
