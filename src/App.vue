@@ -13,7 +13,7 @@
         <div class="level-right">
           <div class="level-item">
             <div>
-              <h1 class="title" style="color:white">Project Pokedex - Ruby</h1>
+              <h1 class="title" style="color:white">Project Pokédex - Ruby</h1>
               <br />
               <small style="color: white; float: right"
                 >Made with 💜 and ☕ by
