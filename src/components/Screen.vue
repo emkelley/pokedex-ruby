@@ -1,5 +1,6 @@
 <template>
-  <div id="screen">
+  <div id="screen" ref="content">
+    <button class="button" @click="renderToPDF()">screenshot</button>
     <div class="columns">
       <div class="column is-3 stats has-text-centered">
         <div class="stats--container">
@@ -49,6 +50,8 @@
 
 <script>
 import pokemon from "pokemon";
+import jsPDF from "jspdf";
+import domtoimage from "dom-to-image";
 export default {
   name: "HelloWorld",
   props: {
@@ -100,6 +103,21 @@ export default {
       oldActive.classList.toggle("is-active");
       newActiveItem.classList.toggle("is-active");
     },
+    renderToPDF() {
+      domtoimage
+        .toPng(this.$refs.content)
+        .then((imgData) => {
+          let img = new Image();
+          img.src = imgData;
+          const doc = new jsPDF("l", "mm", "letter");
+          doc.addImage(img, "JPEG", 10, 10);
+          doc.save("screenshot-pdf");
+          console.error(doc);
+        })
+        .catch(function(error) {
+          console.error("oops, something went wrong!", error);
+        });
+    },
   },
 };
 </script>
@@ -107,7 +125,7 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
 #screen {
-  border: 5px solid black;
+  outline: 8px solid black;
   background-image: linear-gradient(
     0deg,
     #595b5f 25%,

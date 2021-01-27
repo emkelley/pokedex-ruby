@@ -41,7 +41,7 @@
           @click="toggleSound()"
           class="toggle-sound button is-light is-outlined"
         >
-          Toggle Main Menu Music
+          Toggle Pokémon Ruby Menu Theme
         </div>
       </div>
     </main>

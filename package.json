@@ -9,6 +9,8 @@
   },
   "dependencies": {
     "core-js": "^3.6.5",
+    "dom-to-image": "^2.6.0",
+    "jspdf": "^2.3.0",
     "pokemon": "^2.0.2",
     "vue": "^2.6.11"
   },
